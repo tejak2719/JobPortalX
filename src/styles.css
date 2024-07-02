@@ -1,0 +1,292 @@
+/* Existing CSS */
+.header {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  padding: 10px 20px;
+  border-radius: 20px; /* Curved corners */
+  width: calc(100% - 4cm); /* Decrease width by 1cm from both sides (2cm total) */
+  margin: 10px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('/Users/TejaKonda/job-portal-project copy/public/background.jpg'); /* Correct path to the background image */
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.text-block h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.text-block h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.get-started-button {
+  background-color: white;
+  color: purple;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid purple;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.get-started-button:hover {
+  background-color: purple;
+  color: white;
+}
+
+.subscription-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('/Users/TejaKonda/job-portal-project copy/public/light-yellow-bg.jpg'); /* Correct path to the background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.subscription-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscription-plans {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.plan {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 20%; /* Adjusted width to fit four cards in one line */
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.plan-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: -20px -20px 10px -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-header .plan-price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.plan-details {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.plan-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background-color: #0056b3;
+}
+
+.descriptor-section {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.descriptor-section .descriptor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.descriptor-section .descriptor-item img {
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+}
+
+.descriptor-section .descriptor-item:nth-child(even) img {
+  order: 1; /* Display image on the right for even items */
+}
+
+.descriptor-section .descriptor-item-content {
+  width: 50%;
+  padding: 40px; /* Increased padding for larger information blocks */
+  align-self: center; /* Align the content vertically with the images */
+}
+
+.descriptor-section .descriptor-item-content h2 {
+  font-size: 2.5rem; /* Increase the font size for the heading */
+  font-weight: bold; /* Ensure the heading is bold */
+  margin-bottom: 20px; /* Increase the margin below the heading */
+}
+
+.descriptor-section .descriptor-item-content p {
+  font-size: 1.5rem; /* Increase the font size for the paragraph */
+  line-height: 1.5;
+}
+
+.testimonial-section {
+  background-color: #fffde7; /* Light yellow background */
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden; /* Hide the overflow for the marquee effect */
+}
+
+.testimonial-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: marquee 20s linear infinite; /* Marquee animation */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.testimonial {
+  background-color: white;
+  padding: 40px; /* Increased padding for larger cards */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+  min-width: 300px; /* Ensured all cards have the same size */
+  max-width: 300px; /* Ensured all cards have the same size */
+}
+
+.testimonial img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px; /* Fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.testimonial p {
+  font-size: 1.2rem; /* Increased font size for the text */
+  margin: 10px 0;
+}
+
+.testimonial .name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.testimonial .job {
+  font-style: italic;
+  color: #666;
+}
