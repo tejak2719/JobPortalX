@@ -10,6 +10,7 @@ function Header() {
           <li className="nav-item"><a href="#postjobs">PostJobs</a></li>
           <li className="nav-item"><a href="#resources">Resources</a></li>
         </ul>
+        <div id="google_translate_element" style={{ marginRight: '15px' }}></div>
         <a href="#join" className="join-button">Join Now</a>
       </nav>
     </header>

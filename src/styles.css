@@ -1,4 +1,4 @@
-/* Existing CSS */
+/* Header styles */
 .header {
   background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
   padding: 10px 20px;
@@ -58,10 +58,11 @@
   background-color: #0056b3;
 }
 
+/* Hero section styles */
 .hero-section {
   position: relative;
   height: 100vh;
-  background-image: url('/Users/TejaKonda/job-portal-project copy/public/background.jpg'); /* Correct path to the background image */
+  background-image: url('/Users/TejaKonda/Desktop/job-portal-project/public/background.jpg'); /* Correct path to the background image */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-position: center;
@@ -97,79 +98,62 @@
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid purple;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .get-started-button:hover {
-  background-color: purple;
-  color: white;
+  background-color: #dddddd;
 }
 
+/* Subscription section styles */
 .subscription-section {
-  position: relative;
-  height: 100vh;
-  background-image: url('/Users/TejaKonda/job-portal-project copy/public/light-yellow-bg.jpg'); /* Correct path to the background image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  text-align: center;
   padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
 }
 
 .subscription-header {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .subscription-plans {
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .plan {
   background-color: white;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 20%; /* Adjusted width to fit four cards in one line */
-  min-width: 200px;
   margin: 10px;
+  padding: 20px;
   text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
 }
 
 .plan-header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
-  border-radius: 10px 10px 0 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: -20px -20px 10px -20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.plan-header .plan-price {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 10px;
+.plan-price {
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .plan-details {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0;
 }
 
 .plan-button {
@@ -188,51 +172,59 @@
   background-color: #0056b3;
 }
 
+/* Descriptor section styles */
 .descriptor-section {
-  background-color: white;
+  background-color: #f0f0f0;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
 }
 
-.descriptor-section .descriptor-item {
+.descriptor-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
-  max-width: 1200px;
-  width: 100%;
+  margin: 20px 0;
+  width: 80%; /* Adjust the width as needed */
 }
 
-.descriptor-section .descriptor-item img {
-  border-radius: 10px;
-  width: 50%;
-  max-width: 600px;
+.descriptor-item img {
+  border-radius: 15px; /* Curved corners */
+  width: 48%; /* Increased width to half the screen */
+  height: auto;
+  object-fit: cover;
 }
 
-.descriptor-section .descriptor-item:nth-child(even) img {
-  order: 1; /* Display image on the right for even items */
+.descriptor-item-content {
+  max-width: 48%; /* Increased width for text blocks to half the screen */
 }
 
-.descriptor-section .descriptor-item-content {
-  width: 50%;
-  padding: 40px; /* Increased padding for larger information blocks */
-  align-self: center; /* Align the content vertically with the images */
+.descriptor-item:nth-child(1) .descriptor-item-content,
+.descriptor-item:nth-child(3) .descriptor-item-content {
+  order: 1;
 }
 
-.descriptor-section .descriptor-item-content h2 {
-  font-size: 2.5rem; /* Increase the font size for the heading */
-  font-weight: bold; /* Ensure the heading is bold */
-  margin-bottom: 20px; /* Increase the margin below the heading */
+.descriptor-item:nth-child(1) img,
+.descriptor-item:nth-child(3) img {
+  order: 2;
 }
 
-.descriptor-section .descriptor-item-content p {
-  font-size: 1.5rem; /* Increase the font size for the paragraph */
-  line-height: 1.5;
+.descriptor-item:nth-child(2) {
+  flex-direction: row-reverse;
 }
 
+.descriptor-item-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.descriptor-item-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Testimonial section styles */
 .testimonial-section {
   background-color: #fffde7; /* Light yellow background */
   padding: 40px 20px;
@@ -288,5 +280,72 @@
 
 .testimonial .job {
   font-style: italic;
+  color: #666;
+}
+
+/* Background 2 section styles */
+.background2-section {
+  height: 100vh;
+  background-image: url('/Users/TejaKonda/Desktop/job-portal-project/public/bckgd2.jpeg'); /* Path to your background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Meet the Team section styles */
+.meet-the-team-section {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1); /* Shadow effect to simulate hovering */
+}
+
+.meet-the-team-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 20px;
+}
+
+.team-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.team-info p {
+  font-size: 1rem;
   color: #666;
 }

@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <section className="hero-section">
         <div className="text-block">
           <h1>Dream Career</h1>
@@ -46,13 +47,14 @@ function App() {
               Ultimate
               <div className="plan-price">$49.99/month</div>
             </div>
-            <p className="plan-details">Get VIP treatment with personalized job recommendations and career guidance.</p>
+            <p className="plan-details">Get VIP treatment with personalized job recommendations and services.</p>
             <button className="plan-button">Select</button>
           </div>
         </div>
       </section>
 
       <section className="descriptor-section">
+        <h2>Why Choose Us?</h2>
         <div className="descriptor-item">
           <img src="/Hot Jobs.png" alt="Hot Jobs" />
           <div className="descriptor-item-content">
@@ -61,18 +63,18 @@ function App() {
           </div>
         </div>
         <div className="descriptor-item">
+          <img src="/Expert Guidance.png" alt="Expert Guidance" />
           <div className="descriptor-item-content">
             <h2>Expert Guidance</h2>
             <p>Receive expert advice and tips to ace your job interviews.</p>
           </div>
-          <img src="/Expert Guidance.png" alt="Expert Guidance" />
         </div>
         <div className="descriptor-item">
-          <img src="/Instant Matches.png" alt="Instant Matches" />
           <div className="descriptor-item-content">
             <h2>Instant Matches</h2>
             <p>Get instant job matches based on your skills and preferences.</p>
           </div>
+          <img src="/Instant Matches.png" alt="Instant Matches" />
         </div>
       </section>
 
@@ -112,7 +114,50 @@ function App() {
         </div>
       </section>
 
-      {/* Other sections of your single page website */}
+      {/* Background 2 Section */}
+      <section className="background2-section"></section>
+
+      {/* Meet the Team Section */}
+      <section className="meet-the-team-section">
+        <h2>Meet the Team</h2>
+        <div className="team-cards">
+          <div className="team-card">
+            <img src="/team1.jpg" alt="Team Member 1" />
+            <div className="team-info">
+              <h3>John Doe</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div className="team-card">
+            <img src="/team2.jpg" alt="Team Member 2" />
+            <div className="team-info">
+              <h3>Jane Smith</h3>
+              <p>CTO</p>
+            </div>
+          </div>
+          <div className="team-card">
+            <img src="/team3.jpg" alt="Team Member 3" />
+            <div className="team-info">
+              <h3>Mike Johnson</h3>
+              <p>COO</p>
+            </div>
+          </div>
+          <div className="team-card">
+            <img src="/team4.jpg" alt="Team Member 4" />
+            <div className="team-info">
+              <h3>Emily Davis</h3>
+              <p>CFO</p>
+            </div>
+          </div>
+          <div className="team-card">
+            <img src="/team5.jpg" alt="Team Member 5" />
+            <div className="team-info">
+              <h3>Sarah Brown</h3>
+              <p>CMO</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
