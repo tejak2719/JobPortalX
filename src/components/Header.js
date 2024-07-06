@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom' 
 import '../styles.css'; // Import the styles.css file
 
 function Header() {
@@ -6,12 +7,13 @@ function Header() {
     <header className="header">
       <nav className="navbar-container">
         <ul className="nav-list">
-          <li className="nav-item"><a href="#findjobs">FindJobs</a></li>
-          <li className="nav-item"><a href="#postjobs">PostJobs</a></li>
-          <li className="nav-item"><a href="#resources">Resources</a></li>
+          <Link to='/findjobs'  className='nav-item'><li>FindJobs</li></Link>
+          <Link to='/postjobs'  className='nav-item'><li>postjobs</li></Link>
+          <Link to='/Resources' className='nav-item'><li>Resources</li></Link>
         </ul>
         <div id="google_translate_element" style={{ marginRight: '15px' }}></div>
-        <a href="#join" className="join-button">Join Now</a>
+     
+        <Link to="/join"><button className='join-button'>Join Now</button></Link>
       </nav>
     </header>
   );

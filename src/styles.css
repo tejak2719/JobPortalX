@@ -62,7 +62,7 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  background-image: url('/Users/TejaKonda/Desktop/job-portal-project/public/background.jpg'); /* Correct path to the background image */
+  /* background-image: url('/background.jpg'); Correct path to the background image */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-position: center;
@@ -284,16 +284,16 @@
 }
 
 /* Background 2 section styles */
-.background2-section {
+ .background2-section {
   height: 100vh;
-  background-image: url('/Users/TejaKonda/Desktop/job-portal-project/public/bckgd2.jpeg'); /* Path to your background image */
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* background-image: url('/bckgd2.jpeg'); /* Path to your background image */
+   background-size: cover; 
+   background-attachment: fixed; 
+   background-position: center; 
+   display: flex; 
+   justify-content: center; 
+  align-items: center; 
+ }   
 
 /* Meet the Team section styles */
 .meet-the-team-section {
@@ -349,3 +349,51 @@
   font-size: 1rem;
   color: #666;
 }
+
+/* Find Your Dream Job section styles */
+.dream-job-section {
+  height: 100vh;
+  background-image: url('/home/user/JobPortalX/public/bckgrnd3.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  .dream-job-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white /
+  border-radius: 20px; / Curved corners /
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); / Shadow effect */
+  }
+  
+  .dream-job-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+  
+  .dream-job-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  }
+  
+  .dream-job-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Curved corners */
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .dream-job-button:hover {
+  background-color: #0056b3;
+  }
