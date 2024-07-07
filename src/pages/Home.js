@@ -1,11 +1,9 @@
 import React from 'react';
-import ""
 
 function Home() {
   return (
     <div>
-      <h1>Welcome to the Job Portal</h1>
-      <p>Find your dream job here!</p>
+
       <section className="hero-section">
         <div className="text-block">
           <h1>Dream Career</h1>

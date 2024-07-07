@@ -3,7 +3,7 @@
   background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
   padding: 10px 20px;
   border-radius: 20px; /* Curved corners */
-  width: calc(100% - 4cm); /* Decrease width by 1cm from both sides (2cm total) */
+  width: calc(100% - 2cm); /* Decrease width by 1cm from both sides (2cm total) */
   margin: 10px auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed; /* Fix the navbar to the top */
@@ -36,7 +36,7 @@
   margin: 0 15px;
 }
 
-.nav-item a {
+.nav-item  {
   text-decoration: none;
   font-weight: bold;
   color: #000;
@@ -62,7 +62,7 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  /* background-image: url('/background.jpg'); Correct path to the background image */
+  background-image: url('/home/user/JobPortalX/public/background.jpg'); /* Correct path to the background image */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-position: center;
@@ -286,7 +286,7 @@
 /* Background 2 section styles */
  .background2-section {
   height: 100vh;
-  /* background-image: url('/bckgd2.jpeg'); /* Path to your background image */
+  background-image: url('/home/user/JobPortalX/public/bckgd2.jpeg'); /* Path to your background image */
    background-size: cover; 
    background-attachment: fixed; 
    background-position: center; 
